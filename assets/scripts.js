@@ -33,13 +33,3 @@ $(document).on("click", ".tags-bar .nav-link", function () {
 });
 
 
-$(document).on("click", ".tags-bar .nav-link", function () {
-
-    // Gestion visuelle (couleur dorée)
-    $(".tags-bar .nav-link").removeClass("active");
-    $(this).addClass("active");
-
-    // Synchronisation avec le plugin mauGallery
-    $(".tags-bar .nav-link").removeClass("active-tag");
-    $(this).addClass("active-tag");
-});
