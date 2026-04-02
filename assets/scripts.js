@@ -32,4 +32,7 @@ $(document).on("click", ".tags-bar .nav-link", function () {
     $(this).addClass("active-tag");
 });
 
+$('#galleryLightbox').on('shown.bs.modal', function () {
+    $('.lightboxImage').trigger('focus');
+});
 
