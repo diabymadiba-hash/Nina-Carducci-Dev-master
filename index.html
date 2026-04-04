@@ -51,7 +51,8 @@
     ],
     "opens": "10:00",
     "closes": "19:00"
-  }
+  },
+  "priceRange": "€€"
 }
 </script>
 
@@ -72,7 +73,7 @@
 </head>
 
 <body>
-	
+
 	<header>
 		<div class="top-header">
 			<h1 class="name">Nina Carducci</h1>
@@ -82,13 +83,15 @@
 					<li><a href="#gallery">Galerie</a></li>
 					<li><a href="#services">Service</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-							target="_blank"><img src="assets/images/instagram.png"
-								alt="Lien vers le compte Instagram de Nina Carducci"></a></li>
+					<li>
+						<a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+							target="_blank">
+							<img src="assets/images/instagram.png" alt="Lien vers le compte Instagram de Nina Carducci">
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
-		<div id="header">
 	</header>
 
 	<main>
@@ -103,19 +106,24 @@
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
 					aria-label="Slide 3"></button>
 			</div>
+
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" class="d-block w-100"
-						alt="Un homme qui traverse un passage piéton" width="4540" height="2100">
+					<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" width="1920" height="1080"
+						fetchpriority="high" alt="Un homme qui traverse un passage piéton">
 				</div>
+
 				<div class="carousel-item">
-					<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block w-100"
-						alt="Foule de fans assistant à un concert" width="6000" height="2775">
+					<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" width="1920"
+						height="1080" fetchpriority="high" alt="Foule de fans assistant à un concert">
 				</div>
+
 				<div class="carousel-item">
-					<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block w-100"
-						alt="Un couple de mariés s'embrassant lors de leur cérémonie" width="5653" height="2613">
+					<img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100" width="1920"
+						height="1080" fetchpriority="high"
+						alt="Un couple de mariés s'embrassant lors de leur cérémonie">
 				</div>
+
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
 				data-bs-slide="prev">
@@ -131,7 +139,8 @@
 
 		<div id="about">
 			<div class="picture left">
-				<img src="./assets/images/nina.jpg" alt="Photographe du site" loading="lazy" width="1460" height="1456">
+				<img src="./assets/images/nina.webp" width="800" height="800" fetchpriority="high"
+					alt="Photographe du site">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -152,50 +161,47 @@
 		</div>
 		<div id="gallery">
 			<h2 class="title">Portfolio</h2>
+
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
+
+				
 					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"
-						alt="Chanteur sur scène éclairé par des projecteurs bleus" loading="lazy" width="2448"
-						height="3264">
+						src="./assets/images/gallery/concerts/aaron-paul.webp" width="600" height="400"
+						fetchpriority="high" alt="Chanteur sur scène éclairé par des projecteurs bleus">
+
+					
+					<img data-gallery-tag="Entreprises" class="gallery-item"
+						src="./assets/images/gallery/entreprise/ali-morshedlou.webp" width="600" height="400"
+						loading="lazy" alt="Homme en costume croisant les bras dans un bureau lumineux">
 
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
-						alt="Homme en costume croisant les bras dans un bureau lumineux" loading="lazy" width="4000"
-						height="6000">
-
-					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg"
-						alt="Employée souriante dans un espace de travail moderne" loading="lazy" width="4084"
-						height="2764">
+						src="./assets/images/gallery/entreprise/jason-goodman.webp" width="600" height="400"
+						loading="lazy" alt="Employée souriante dans un espace de travail moderne">
 
 					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"
-						alt="Mains d'un couple se touchant lors d'une cérémonie de mariage" loading="lazy" width="4453"
-						height="3562">
+						src="./assets/images/gallery/mariage/hannah-busing.webp" width="600" height="400" loading="lazy"
+						alt="Mains d'un couple se touchant lors d'une cérémonie de mariage">
 
 					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"
-						alt="Portrait d'un homme regardant l'objectif avec intensité" loading="lazy" width="2211"
-						height="3314">
+						src="./assets/images/gallery/portraits/ade-tunji.webp" width="600" height="400" loading="lazy"
+						alt="Portrait d'un homme regardant l'objectif avec intensité">
 
 					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"
-						alt="Couple de mariés marchant ensemble en extérieur" loading="lazy" width="4480" height="6720">
+						src="./assets/images/gallery/mariage/jakob-owens.webp" width="600" height="400" loading="lazy"
+						alt="Couple de mariés marchant ensemble en extérieur">
 
 					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg"
-						alt="Portrait d'une femme posant en extérieur" loading="lazy" width="4024" height="6048">
+						src="./assets/images/gallery/portraits/nino-van-prattenburg.webp" width="600" height="400"
+						loading="lazy" alt="Portrait d'une femme posant en extérieur">
 
 					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"
-						alt="Chanteur sur scène levant le bras devant le public" loading="lazy" width="5233"
-						height="3489">
+						src="./assets/images/gallery/concerts/austin-neill.webp" width="600" height="400" loading="lazy"
+						alt="Chanteur sur scène levant le bras devant le public">
 
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"
-						alt="Femme souriante travaillant sur un ordinateur portable" loading="lazy" width="6000"
-						height="3674">
+						src="./assets/images/gallery/entreprise/mateus-campos.webp" width="600" height="400"
+						loading="lazy" alt="Femme souriante travaillant sur un ordinateur portable">
 
 				</div>
 			</div>
@@ -289,8 +295,9 @@
 
 					</div>
 					<div class="picture right">
-						<img src="./assets/images/camera.jpg" alt="Illustration d'un appareil photo" loading="lazy"
-							width="40" height="40">
+						<img src="./assets/images/camera.webp" width="40" height="40" loading="lazy"
+							alt="Illustration d'un appareil photo">
+
 					</div>
 				</div>
 			</div>

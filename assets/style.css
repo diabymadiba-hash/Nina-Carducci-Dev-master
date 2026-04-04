@@ -249,6 +249,63 @@ input[type="submit"] {
     height: auto;
 }
 
+
+/* Couleur de texte accessible */
+body, p, li {
+    color: #222;
+}
+
+/* Titres */
+h1, h2, h3, h4 {
+    color: #111;
+}
+
+/* Citations */
+.quote__text,
+.quote__author {
+    color: #2b2b2b;
+}
+
+/* Services */
+.service__description p,
+.service__price-value,
+.service__price span {
+    color: #2a2a2a;
+}
+
+/* Formulaire */
+label {
+    color: #222;
+}
+
+.nav-pills .nav-link.active {
+    color: #111 !important;
+}
+/* Contraste section A propos */
+#about,
+#about h2,
+#about h3,
+#about p {
+    color: #3b2a1a !important;
+}
+
+/* Contraste fort sur la section A propos */
+#about-me p,
+.about-me__introduction {
+    color: #2b1a0a !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1) brightness(2) !important; /* icône très blanche */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0,0,0,0.7) !important; /* fond sombre */
+}
+
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
